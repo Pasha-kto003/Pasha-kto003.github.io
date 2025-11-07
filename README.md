@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Invaders WPF - Космический шутер</title>
@@ -415,10 +415,10 @@
             }
         }
     </style>
-</head>
-<body>
-    <!-- Анимированные звезды -->
-    <div class="stars" id="stars"></div>
+    </head>
+    <body>
+        <!-- Анимированные звезды -->
+        <div class="stars" id="stars"></div>
 
     <!-- Header -->
     <header>
