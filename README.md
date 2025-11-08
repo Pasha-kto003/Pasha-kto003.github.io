@@ -811,19 +811,23 @@
                 <div class="content">
                     <div class="screenshot-grid">
                         <div class="screenshot">
-                            <div class="screenshot-placeholder">Главное меню</div>
+                            <div class="screenshot-placeholder"><img width="353" height="304" alt="image" src="https://github.com/user-attachments/assets/003e17c9-2f99-47ec-8d56-c6359f75a5ce" />
+                            </div>
                             <p>Выбор режима игры</p>
                         </div>
                         <div class="screenshot">
-                            <div class="screenshot-placeholder">Игровой процесс</div>
+                            <div class="screenshot-placeholder"><img width="468" height="685" alt="image" src="https://github.com/user-attachments/assets/d9238da5-c993-4d2b-bed3-02a0519b54ad" />
+                            </div>
                             <p>Сражение с врагами</p>
                         </div>
                         <div class="screenshot">
-                            <div class="screenshot-placeholder">Босс-битва</div>
+                            <div class="screenshot-placeholder"><img width="464" height="685" alt="image" src="https://github.com/user-attachments/assets/b8698152-7c79-48ab-ad6a-3fb9b7f6aab8" />
+                            </div>
                             <p>Финальный босс</p>
                         </div>
                         <div class="screenshot">
-                            <div class="screenshot-placeholder">Система щитов</div>
+                            <div class="screenshot-placeholder"><img width="468" height="685" alt="image" src="https://github.com/user-attachments/assets/eaf4d83e-481c-415a-b0dc-33b2c8f15c50" />
+                            </div>
                             <p>Защита от атак</p>
                         </div>
                     </div>
