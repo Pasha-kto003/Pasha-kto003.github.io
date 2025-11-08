@@ -148,6 +148,107 @@
             border-color: #ffffff #000000 #000000 #ffffff;
         }
 
+        /* Controls Section */
+        .controls-section {
+            background: #c0c0c0;
+            border: 4px double #008000;
+            padding: 25px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .controls-section::before {
+            content: '🎮';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #c0c0c0;
+            padding: 0 15px;
+            font-size: 20px;
+        }
+
+        .controls-section h3 {
+            color: #008000;
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 0px #ffffff;
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .control-group {
+            background: rgba(0, 128, 0, 0.1);
+            border: 2px inset #dfdfdf;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .control-group h4 {
+            color: #008000;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #008000;
+            padding-bottom: 8px;
+        }
+
+        .key {
+            display: inline-block;
+            background: #000000;
+            color: #00ff00;
+            padding: 8px 16px;
+            margin: 5px;
+            border: 2px outset #dfdfdf;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 16px;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .key-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .controls-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .keyboard-placeholder {
+            width: 100%;
+            max-width: 400px;
+            height: 150px;
+            background: linear-gradient(45deg, #004400, #008800);
+            border: 4px outset #dfdfdf;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00ff00;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+        }
+
+        .controls-tip {
+            background: #ffffcc;
+            border: 2px inset #dfdfdf;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            font-style: italic;
+            color: #000000;
+        }
+
         /* Features Grid */
         .features-grid {
             display: grid;
@@ -216,50 +317,6 @@
             font-size: 12px;
         }
 
-        /* Installation Steps */
-        .steps {
-            margin: 20px 0;
-        }
-
-        .step {
-            background: #c0c0c0;
-            border: 2px inset #dfdfdf;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .step-number {
-            background: #000080;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 15px;
-            flex-shrink: 0;
-            border: 2px outset #dfdfdf;
-        }
-
-        .step-content {
-            flex: 1;
-        }
-
-        .code-block {
-            background: #000000;
-            color: #00ff00;
-            padding: 15px;
-            margin: 10px 0;
-            border: 2px inset #dfdfdf;
-            font-family: 'Courier New', monospace;
-            font-size: 12px;
-            overflow-x: auto;
-        }
-
         /* Friend Recommendation */
         .friend-recommendation {
             background: #c0c0c0;
@@ -312,6 +369,50 @@
             color: #800080;
             margin-bottom: 8px;
             font-size: 14px;
+        }
+
+        /* Installation Steps */
+        .steps {
+            margin: 20px 0;
+        }
+
+        .step {
+            background: #c0c0c0;
+            border: 2px inset #dfdfdf;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: #000080;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+            border: 2px outset #dfdfdf;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .code-block {
+            background: #000000;
+            color: #00ff00;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px inset #dfdfdf;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
         }
 
         /* Screenshots */
@@ -443,7 +544,8 @@
             
             .features-grid,
             .modes-container,
-            .friend-features {
+            .friend-features,
+            .controls-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -488,6 +590,70 @@
                 <div>
                     <a href="#installation" class="button primary">Скачать игру</a>
                     <a href="https://github.com/your-username/space-invaders-wpf" class="button" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Controls Section -->
+            <div class="controls-section">
+                <h3>🎮 Обучение управлению</h3>
+                <p style="text-align: center; margin-bottom: 20px; font-size: 16px;">Освойте простые и интуитивные управления для полного контроля над космическим кораблем!</p>
+                
+                <div class="controls-grid">
+                    <div class="control-group">
+                        <h4>🚀 Движение</h4>
+                        <div class="key">A</div>
+                        <div class="key">←</div>
+                        <div class="key-description">Движение влево</div>
+                        
+                        <div style="margin: 15px 0;"></div>
+                        
+                        <div class="key">D</div>
+                        <div class="key">→</div>
+                        <div class="key-description">Движение вправо</div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h4>💥 Стрельба</h4>
+                        <div class="key" style="background: #ff0000; color: white;">SPACE</div>
+                        <div class="key-description">Выстрел лазером</div>
+                        
+                        <div style="margin: 15px 0;"></div>
+                        
+                        <div class="key-description">Одновременно можно выпустить до 3 пуль</div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h4>⚙️ Дополнительные клавиши</h4>
+                        <div class="key">ESC</div>
+                        <div class="key">P</div>
+                        <div class="key-description">Пауза / Меню</div>
+                        
+                        <div style="margin: 10px 0;"></div>
+                        
+                        <div class="key">M</div>
+                        <div class="key-description">Вкл/Выкл звук</div>
+                        
+                        <div style="margin: 10px 0;"></div>
+                        
+                        <div class="key">+</div>
+                        <div class="key">-</div>
+                        <div class="key-description">Громкость звука</div>
+                    </div>
+                </div>
+
+                <div class="controls-image">
+                    <div class="keyboard-placeholder">
+                        [ WASD ] или [ ←↑↓→ ]<br>
+                        + [ SPACE ] для стрельбы
+                    </div>
+                </div>
+
+                <div class="controls-tip">
+                    💡 <strong>Совет:</strong> Используйте тактику "стрельба и движение" - стреляйте постоянно while двигаясь из стороны в сторону, чтобы избежать вражеских атак!
+                </div>
+
+                <div class="controls-tip">
+                    🎯 <strong>Продвинутая тактика:</strong> В бесконечном режиме прицеливайтесь в верхний ряд врагов - только они могут стрелять в ответ!
                 </div>
             </div>
 
