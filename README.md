@@ -770,7 +770,7 @@
                                 <strong>Скачайте с GitHub</strong>
                                 <p>Клонируйте репозиторий или скачайте ZIP</p>
                                 <div class="code-block">
-                                    git clone https://github.com/your-username/space-invaders-wpf.git
+                                    git clone https://github.com/Pasha-kto003/Space_Invaders_WPF.git
                                 </div>
                             </div>
                         </div>
@@ -842,7 +842,7 @@
             <div class="footer-section">
                 <h3>Ссылки</h3>
                 <ul class="footer-links">
-                    <li><a href="https://github.com/your-username/space-invaders-wpf">GitHub репозиторий</a></li>
+                    <li><a href="https://github.com/Pasha-kto003/Space_Invaders_WPF">GitHub репозиторий</a></li>
                     <li><a href="#installation">Установка</a></li>
                     <li><a href="#features">Особенности</a></li>
                 </ul>
