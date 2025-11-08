@@ -142,6 +142,12 @@
             border-color: #ffffff #000000 #000000 #ffffff;
         }
 
+        .button.friend {
+            background: #800080;
+            color: white;
+            border-color: #ffffff #000000 #000000 #ffffff;
+        }
+
         /* Features Grid */
         .features-grid {
             display: grid;
@@ -252,6 +258,60 @@
             font-family: 'Courier New', monospace;
             font-size: 12px;
             overflow-x: auto;
+        }
+
+        /* Friend Recommendation */
+        .friend-recommendation {
+            background: #c0c0c0;
+            border: 4px double #800080;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .friend-recommendation::before {
+            content: '🌟';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #c0c0c0;
+            padding: 0 15px;
+            font-size: 20px;
+        }
+
+        .friend-recommendation h3 {
+            color: #800080;
+            font-size: 22px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 0px #ffffff;
+        }
+
+        .friend-recommendation p {
+            margin-bottom: 20px;
+            font-size: 15px;
+            color: #000000;
+        }
+
+        .friend-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .friend-feature {
+            background: rgba(128, 0, 128, 0.1);
+            border: 1px solid #800080;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .friend-feature h4 {
+            color: #800080;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
 
         /* Screenshots */
@@ -382,7 +442,8 @@
             }
             
             .features-grid,
-            .modes-container {
+            .modes-container,
+            .friend-features {
                 grid-template-columns: 1fr;
             }
             
@@ -402,6 +463,10 @@
         <div class="desktop-icon" style="position: absolute; top: 20px; left: 120px;">
             <div style="width: 48px; height: 48px; background: #ff0000; border: 2px outset #dfdfdf; margin: 0 auto 5px;"></div>
             <span>Space Invaders</span>
+        </div>
+        <div class="desktop-icon" style="position: absolute; top: 20px; left: 220px;">
+            <div style="width: 48px; height: 48px; background: #800080; border: 2px outset #dfdfdf; margin: 0 auto 5px;"></div>
+            <span>Laser Dino</span>
         </div>
     </div>
 
@@ -486,6 +551,44 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Friend Recommendation -->
+            <div class="friend-recommendation">
+                <h3>🚀 Рекомендуем также попробовать!</h3>
+                <p>Наш друг создал потрясающую игру <strong>Laser Dino</strong> - динамичный платформер с динозавром и лазерами!</p>
+                
+                <div class="friend-features">
+                    <div class="friend-feature">
+                        <h4>🦖 Уникальный герой</h4>
+                        <p>Динозавр с лазерной пушкой</p>
+                    </div>
+                    <div class="friend-feature">
+                        <h4>⚡ Динамичный геймплей</h4>
+                        <p>Прыжки, стрельба, уклонения</p>
+                    </div>
+                    <div class="friend-feature">
+                        <h4>🎯 Захватывающие уровни</h4>
+                        <p>Платформы, враги, боссы</p>
+                    </div>
+                    <div class="friend-feature">
+                        <h4>🌟 Стильная графика</h4>
+                        <p>Яркий ретро-стиль</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <a href="https://onefreeusername.github.io/LaserDino_Landing/" class="button friend" target="_blank">
+                        🌐 Посмотреть лендинг Laser Dino
+                    </a>
+                    <a href="https://github.com/OneFreeUsername/LaserDino" class="button" target="_blank" style="background: #008000; color: white;">
+                        💻 GitHub репозиторий
+                    </a>
+                </div>
+
+                <p style="margin-top: 15px; font-size: 13px; color: #666;">
+                    Поддержите разработчика - поставьте звезду на GitHub! ⭐
+                </p>
             </div>
 
             <!-- Installation -->
@@ -579,12 +682,10 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Технологии</h3>
+                <h3>Рекомендуем</h3>
                 <ul class="footer-links">
-                    <li>WPF (Windows Presentation Foundation)</li>
-                    <li>C# .NET Framework</li>
-                    <li>XAML интерфейс</li>
-                    <li>SoundPlayer для аудио</li>
+                    <li><a href="https://onefreeusername.github.io/LaserDino_Landing/" target="_blank">Laser Dino - Лендинг</a></li>
+                    <li><a href="https://github.com/OneFreeUsername/LaserDino" target="_blank">Laser Dino - GitHub</a></li>
                 </ul>
             </div>
         </div>
@@ -632,8 +733,18 @@
         // Имитация двойного клика по иконкам
         document.querySelectorAll('.desktop-icon').forEach(icon => {
             icon.addEventListener('dblclick', function() {
-                alert('Запуск ' + this.querySelector('span').textContent);
+                const appName = this.querySelector('span').textContent;
+                if (appName === 'Laser Dino') {
+                    window.open('https://onefreeusername.github.io/LaserDino_Landing/', '_blank');
+                } else {
+                    alert('Запуск ' + appName);
+                }
             });
+        });
+
+        // Открытие ссылок Laser Dino в новом окне
+        document.querySelectorAll('a[href*="LaserDino"]').forEach(link => {
+            link.setAttribute('target', '_blank');
         });
     </script>
 </body>
