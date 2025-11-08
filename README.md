@@ -811,22 +811,22 @@
                 <div class="content">
                     <div class="screenshot-grid">
                         <div class="screenshot">
-                            <div class="screenshot-placeholder"><img width="353" height="304" alt="image" src="https://github.com/user-attachments/assets/003e17c9-2f99-47ec-8d56-c6359f75a5ce" />
+                            <div class="screenshot-placeholder"><img alt="image" src="[https://github.com/user-attachments/assets/003e17c9-2f99-47ec-8d56-c6359f75a5ce](https://private-user-images.githubusercontent.com/73583155/511658258-2696fd46-0a69-4ab0-a226-ffe3eb650594.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjI2MDUxNTIsIm5iZiI6MTc2MjYwNDg1MiwicGF0aCI6Ii83MzU4MzE1NS81MTE2NTgyNTgtMjY5NmZkNDYtMGE2OS00YWIwLWEyMjYtZmZlM2ViNjUwNTk0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTExMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMTA4VDEyMjczMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMwZGZiYTE3ZThhOGY1OGE4NmJiNTVlNjA2NTIwNmNmYjdlNWI3ZTc4MzQzODlhZTYxNTkxMTM1MjNiZDQ2NzMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.V7lA7UiXlSIQkbABwDsDezROH-UdZ_I3393WBZxgBcg)" />
                             </div>
                             <p>Выбор режима игры</p>
                         </div>
                         <div class="screenshot">
-                            <div class="screenshot-placeholder"><img width="468" height="685" alt="image" src="https://github.com/user-attachments/assets/d9238da5-c993-4d2b-bed3-02a0519b54ad" />
+                            <div class="screenshot-placeholder"><img alt="image" src="https://github.com/user-attachments/assets/d9238da5-c993-4d2b-bed3-02a0519b54ad" />
                             </div>
                             <p>Сражение с врагами</p>
                         </div>
                         <div class="screenshot">
-                            <div class="screenshot-placeholder"><img width="464" height="685" alt="image" src="https://github.com/user-attachments/assets/b8698152-7c79-48ab-ad6a-3fb9b7f6aab8" />
+                            <div class="screenshot-placeholder"><img alt="image" src="https://github.com/user-attachments/assets/b8698152-7c79-48ab-ad6a-3fb9b7f6aab8" />
                             </div>
                             <p>Финальный босс</p>
                         </div>
                         <div class="screenshot">
-                            <div class="screenshot-placeholder"><img width="468" height="685" alt="image" src="https://github.com/user-attachments/assets/eaf4d83e-481c-415a-b0dc-33b2c8f15c50" />
+                            <div class="screenshot-placeholder"><img alt="image" src="https://github.com/user-attachments/assets/eaf4d83e-481c-415a-b0dc-33b2c8f15c50" />
                             </div>
                             <p>Защита от атак</p>
                         </div>
